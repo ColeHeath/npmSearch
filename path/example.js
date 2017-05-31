@@ -8,10 +8,6 @@ const commands = {
   search (text) {
     return this
       .setValue('input[type=search]',[text])
-      //browser.sendKeys('input[type=search]',browser.Keys.ENTER)
-  },
-  searchEnter () {
-    return this
       .click('[tabindex="2"]')
   }
 };
